@@ -1,12 +1,12 @@
 <?php
 
-namespace nanatty32\HubtelMerchantAccount\Helpers;
+namespace Nanatty32\HubtelMerchantAccount\Helpers;
 
 use GuzzleHttp\Client;
-use nanatty32\HubtelMerchantAccount\MobileMoney\Refund\Request as RefundRequest;
-use nanatty32\HubtelMerchantAccount\MobileMoney\Receive\Request as ReceiveMobileMoneyRequest;
-use nanatty32\HubtelMerchantAccount\OnlineCheckout\Request as OnlineCheckoutRequest;
-use nanatty32\HubtelMerchantAccount\OnlineCheckout\Response as OnlineCheckoutResponse;
+use Nanatty32\HubtelMerchantAccount\MobileMoney\Refund\Request as RefundRequest;
+use Nanatty32\HubtelMerchantAccount\MobileMoney\Receive\Request as ReceiveMobileMoneyRequest;
+use Nanatty32\HubtelMerchantAccount\OnlineCheckout\Request as OnlineCheckoutRequest;
+use Nanatty32\HubtelMerchantAccount\OnlineCheckout\Response as OnlineCheckoutResponse;
 
 class SendsRequests
 {
