@@ -114,7 +114,7 @@ class CheckoutController extends Controller
         $request->Channel = $this->transaction->channel;
         $request->CustomerMsisdn = $this->transaction->mobile_wallet_number;
         $request->CustomerName = "N/A";
-        $request->Description = "Bet Amount";
+        $request->Description = "N/A ";
         $request->PrimaryCallbackURL = "https://my-application.com/handle" . $this->transaction->id;
         $request->SecondaryCallbackURL = "https://my-application.com/handle/" . $this->transaction->id;
         $response = HubtelMerchantAccount::receiveMobileMoney($request);
