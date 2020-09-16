@@ -1,6 +1,6 @@
 <?php
 
-namespace nanatty32\HubtelMerchantAccount\MobileMoney\Refund;
+namespace Nanatty32\HubtelMerchantAccount\MobileMoney\Refund;
 
 class Response
 {
