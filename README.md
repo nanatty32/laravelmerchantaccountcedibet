@@ -48,7 +48,7 @@ namespace App\Http\Controllers;
 
 use nanatty32\HubtelMerchantAccount\OnlineCheckout\Item;
 use HubtelMerchantAccount;
-use App\Order;
+use App\Stake;
 use Illuminate\Http\Request;
 
 class CheckoutController extends Controller
@@ -58,26 +58,26 @@ class CheckoutController extends Controller
   
   public function payOnline(Request $request)
     {
-        $order = Order::where('session_id', $request->session()->getId())->latest()->first();
+        $stake = Stake::where('session_id', $request->session()->getId())->latest()->first();
 
-        if (!$order) {
-            abort(404, 'Invalid order!');
+        if (!$stake) {
+            abort(404, 'Invalid stake!');
         }
 
         // Initiate online checkout
         $ocRequest = new \nanatty32\HubtelMerchantAccount\OnlineCheckout\Request();
         $ocRequest->invoice->description = "Invoice description";
-        $ocRequest->invoice->total_amount = $order->total;
-        $ocRequest->store->name = "CediBet";
-        $ocRequest->store->logo_url = asset('/img/logo.png');// Can be changed by developers 
-        $ocRequest->store->phone = "0546XXXXXX";
-        $ocRequest->store->postal_address = "P. O. Box ******";
-        $ocRequest->store->tagline = "Best online Betting Company In Ghana";
-        $ocRequest->store->website_url = env('APP_URL');
+        $ocRequest->invoice->total_amount = $stake->total;
+        $ocRequest->business->name = "CediBet";
+        $ocRequest->business->logo_url = asset('/img/logo.png');// Can be changed by developers 
+        $ocRequest->business->phone = "0243XXXXXX";
+        $ocRequest->business->postal_address = "P. O. Box ******";
+        $ocRequest->business->tagline = "Best online Betting Company In Ghana";
+        $ocRequest->business->website_url = env('APP_URL');
         $ocRequest->actions->cancel_url = url('/checkout/done');
         $ocRequest->actions->return_url = url('/checkout/done');
 
-        foreach ($order->items as $item) {
+        foreach ($stake->items as $item) {
 
             $invoiceItem = new Item();
             $invoiceItem->name = $item->product_name;
@@ -114,7 +114,7 @@ class CheckoutController extends Controller
         $request->Channel = $this->transaction->channel;
         $request->CustomerMsisdn = $this->transaction->mobile_wallet_number;
         $request->CustomerName = "N/A";
-        $request->Description = "N/A ";
+        $request->Description = "Bet Amount";
         $request->PrimaryCallbackURL = "https://my-application.com/handle" . $this->transaction->id;
         $request->SecondaryCallbackURL = "https://my-application.com/handle/" . $this->transaction->id;
         $response = HubtelMerchantAccount::receiveMobileMoney($request);
@@ -147,9 +147,9 @@ return [
     ],
 
     /**
-     * Store details
+     * business details
      */
-    "store" => [
+    "business" => [
         "name" => env('APP_NAME')
     ]
 ];
@@ -161,7 +161,7 @@ Released under the MIT License, see [LICENSE](LICENSE).
 
 [ico-version]: https://img.shields.io/github/release/nanatty32/laravelhubtelmerchantaccountcedibet.svg?style=flat-square
 [ico-license]: https://img.shields.io/badge/license-MIT-brightgreen.svg?style=flat-square
+[ico-scrutinizer]: https://img.shields.io/scrutinizer/coverage/g/nanatty32/laravelhubtelmerchantaccountcedibet.svg?style=flat-square
+[ico-code-quality]: https://img.shields.io/scrutinizer/g/nanatty32/laravelhubtelmerchantaccountcedibet.svg?style=flat-square
 
 
-
-# laravelmerchantaccountcedibet

@@ -1,0 +1,32 @@
+{
+  "name": "nanatty32/laravelhubtelmerchantaccountcedibet",
+  "description": "Hubtel Merchant Account integration for Laravel",
+  "keywords": ["laravel", "payment", "gateway", "api", "hubtel", "merchant", "account"],
+  "type": "library",
+  "require": {
+    "guzzlehttp/guzzle": "^6.3"
+  },
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Crentsil@gmail.com",
+      "email": "cre.ntsilkwayie@gmail.com"
+    }
+  ],
+  "autoload": {
+    "psr-4": {
+      "nanatty32\\HubtelMerchantAccount\\": "src"
+    }
+  },
+  "minimum-stability": "dev",
+  "extra": {
+    "laravel": {
+        "providers": [
+            "nanatty32\\HubtelMerchantAccount\\ServiceProvider"
+        ],
+        "aliases": {
+            "HubtelMerchantAccount": "nanatty32\\HubtelMerchantAccount\\HubtelMerchantAccountFacade"
+        }
+    }
+  }
+}
