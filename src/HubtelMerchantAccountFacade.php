@@ -1,6 +1,6 @@
 <?php
 
-namespace nanatty32\HubtelMerchantAccount;
+namespace Nanatty32\HubtelMerchantAccount;
 
 use Illuminate\Support\Facades\Facade as BaseFacade;
 
