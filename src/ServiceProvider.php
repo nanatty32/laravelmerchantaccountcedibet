@@ -1,8 +1,8 @@
 <?php
 
-namespace nanatty32\HubtelMerchantAccount;
+namespace Nanatty32\HubtelMerchantAccount;
 
-use nanatty32\HubtelMerchantAccount\Helpers\SendsRequests;
+use Nanatty32\HubtelMerchantAccount\Helpers\SendsRequests;
 use Illuminate\Support\ServiceProvider as BaseServiceProvider;
 
 
