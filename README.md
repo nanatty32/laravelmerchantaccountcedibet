@@ -1,5 +1,5 @@
 # Hubtel Merchant Account integration (Pure Laravel CediBet)
-[![Latest Release on GitHub]
+[Latest Release on GitHub]
 
 
 
