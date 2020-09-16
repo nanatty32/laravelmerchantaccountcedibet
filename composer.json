@@ -1,7 +1,7 @@
 {
   "name": "nanatty32/laravelhubtelmerchantaccountcedibet",
-  "description": "Hubtel Merchant Account integration (Pure Laravel CediBet)",
-  "keywords": ["laravel", "payment", "gateway", "api", "hubtel", "merchant", "account"],
+  "description": "Laravel Hubtel Merchant Account integration (Pure Laravel CediBet)",
+  "keywords": ["laravel", "payment", "gateway", "api", "hubtel", "merchant", "account" , "cedibet"],
   "type": "library",
   "require": {
     "guzzlehttp/guzzle": "^6.3"
