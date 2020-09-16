@@ -1,6 +1,6 @@
 {
   "name": "nanatty32/laravelhubtelmerchantaccountcedibet",
-  "description": "Hubtel Merchant Account integration for Laravel",
+  "description": "Hubtel Merchant Account integration (Pure Laravel CediBet)",
   "keywords": ["laravel", "payment", "gateway", "api", "hubtel", "merchant", "account"],
   "type": "library",
   "require": {
