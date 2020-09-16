@@ -7,7 +7,7 @@ Based on https://developers.hubtel.com/documentations/merchant-account-api
 
 ## About
 
-The `laravel-hubtel-merchant-account` package allows you to accept and process payments using [Hubtel Merchant Account API](https://developers.hubtel.com/documentations/merchant-account-api) directly in your Laravel application.
+The `laravel-hubtel-merchant-account-cedibet` package allows you to accept and process payments using [Hubtel Merchant Account API](https://developers.hubtel.com/documentations/merchant-account-api) directly in your Laravel application.
 
 ## Features
 
