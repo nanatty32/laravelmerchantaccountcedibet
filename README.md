@@ -28,13 +28,13 @@ Should you still be on older versions of Laravel, the final steps for you are to
 
 Add the HubtelMerchantAccount\ServiceProvider to your `providers` array:
 ```php
-nanatty32\HubtelMerchantAccount\ServiceProvider::class,
+Nanatty32\HubtelMerchantAccount\ServiceProvider::class,
 ```
 And add a new line to the `aliases` array:
 ```php
 'aliases' => [
       ...
-      'HubtelMerchantAccount' => nanatty32\HubtelMerchantAccount\HubtelMerchantAccountFacade::class,
+      'HubtelMerchantAccount' => Nanatty32\HubtelMerchantAccount\HubtelMerchantAccountFacade::class,
       ...
  ]
 ```
@@ -46,7 +46,7 @@ Let's say you are using this feature from a controller method, you can do it lik
 ```php
 namespace App\Http\Controllers;
 
-use nanatty32\HubtelMerchantAccount\OnlineCheckout\Item;
+use Nanatty32\HubtelMerchantAccount\OnlineCheckout\Item;
 use HubtelMerchantAccount;
 use App\Stake;
 use Illuminate\Http\Request;
@@ -100,7 +100,7 @@ Here is how you request mobile money payment from the controller method:
 namespace App\Http\Controllers;
 
 use HubtelMerchantAccount;
-use nanatty32\HubtelMerchantAccount\MobileMoney\Receive\Request as ReceiveMobileMoneyRequest;
+use Nanatty32\HubtelMerchantAccount\MobileMoney\Receive\Request as ReceiveMobileMoneyRequest;
 
 class CheckoutController extends Controller
 {
