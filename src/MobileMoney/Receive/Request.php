@@ -1,11 +1,6 @@
 <?php
-/**
- * Created by PhpStorm.
- 
- 
- */
 
-namespace nanatty32\HubtelMerchantAccount\MobileMoney\Receive;
+namespace Nanatty32\HubtelMerchantAccount\MobileMoney\Receive;
 
 
 class Request
