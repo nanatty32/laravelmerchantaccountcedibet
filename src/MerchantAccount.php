@@ -1,19 +1,16 @@
 <?php
-/**
- * Created by PhpStorm.
- 
- */
-
-namespace nanatty32\HubtelMerchantAccount;
 
 
-use nanatty32\HubtelMerchantAccount\Helpers\SendsRequests;
-use nanatty32\HubtelMerchantAccount\MobileMoney\Receive\Request as ReceiveMobileMoneyRequest;
-use nanatty32\HubtelMerchantAccount\MobileMoney\Receive\Response as ReceiveMobileMoneyResponse;
-use nanatty32\HubtelMerchantAccount\MobileMoney\Refund\Request as RefundMobileMoneyRequest;
-use nanatty32\HubtelMerchantAccount\MobileMoney\Refund\Response as RefundMobileMoneyResponse;
-use nanatty32\HubtelMerchantAccount\OnlineCheckout\Request as OnlineCheckoutRequest;
-use nanatty32\HubtelMerchantAccount\OnlineCheckout\InvoiceStatusResponse as OnlineCheckoutInvoiceStatusResponse;
+namespace Nanatty32\HubtelMerchantAccount;
+
+
+use Nanatty32\HubtelMerchantAccount\Helpers\SendsRequests;
+use Nanatty32\HubtelMerchantAccount\MobileMoney\Receive\Request as ReceiveMobileMoneyRequest;
+use Nanatty32\HubtelMerchantAccount\MobileMoney\Receive\Response as ReceiveMobileMoneyResponse;
+use Nanatty32\HubtelMerchantAccount\MobileMoney\Refund\Request as RefundMobileMoneyRequest;
+use Nanatty32\HubtelMerchantAccount\MobileMoney\Refund\Response as RefundMobileMoneyResponse;
+use Nanatty32\HubtelMerchantAccount\OnlineCheckout\Request as OnlineCheckoutRequest;
+use Nanatty32\HubtelMerchantAccount\OnlineCheckout\InvoiceStatusResponse as OnlineCheckoutInvoiceStatusResponse;
 
 class MerchantAccount
 {
