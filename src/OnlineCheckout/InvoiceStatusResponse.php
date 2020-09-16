@@ -1,6 +1,6 @@
 <?php
 
-namespace nanatty32\HubtelMerchantAccount\OnlineCheckout;
+namespace Nanatty32\HubtelMerchantAccount\OnlineCheckout;
 
 
 class InvoiceStatusResponse
