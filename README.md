@@ -65,7 +65,7 @@ class CheckoutController extends Controller
         }
 
         // Initiate online checkout
-        $ocRequest = new \nanatty32\HubtelMerchantAccount\OnlineCheckout\Request();
+        $ocRequest = new \Nanatty32\HubtelMerchantAccount\OnlineCheckout\Request();
         $ocRequest->invoice->description = "Invoice description";
         $ocRequest->invoice->total_amount = $stake->total;
         $ocRequest->business->name = "CediBet";
@@ -125,7 +125,7 @@ class CheckoutController extends Controller
 
 The defaults are set in `config/hubtelmerchantaccount.php`. Copy this file to your own config directory to modify the values. You can publish the config using this command:
 ```sh
-$ php artisan vendor:publish --provider="nanatty32\HubtelMerchantAccount\ServiceProvider"
+$ php artisan vendor:publish --provider="Nanatty32\HubtelMerchantAccount\ServiceProvider"
 ```
 
     
