@@ -1,6 +1,6 @@
 <?php
 
-namespace nanatty32\HubtelMerchantAccount\MobileMoney\Receive;
+namespace Nanatty32\HubtelMerchantAccount\MobileMoney\Receive;
 
 
 class Response
