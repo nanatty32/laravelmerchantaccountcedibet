@@ -1,10 +1,7 @@
 <?php
-/**
- * Created by PhpStorm.
- 
- */
 
-namespace nanatty32\HubtelMerchantAccount\Helpers;
+
+namespace Nanatty32\HubtelMerchantAccount\Helpers;
 
 
 trait FormatsRequests
